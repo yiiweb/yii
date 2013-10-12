@@ -1,0 +1,5 @@
+run command 
+protected/yiic shell
+
+and create controller message
+controller message hellWorld
