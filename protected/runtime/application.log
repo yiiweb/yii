@@ -245,3 +245,59 @@ REQUEST_URI=/demo/index.php
 in /var/www/html/demo/protected/views/layouts/main.php (51)
 in /var/www/html/demo/protected/views/layouts/column1.php (6)
 in /var/www/html/demo/protected/controllers/SiteController.php (32)
+2013/10/12 15:48:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "helloworld".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('helloworld')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('helloworld')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('message/hellowo...')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/demo/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=message/helloworld
+---
+2013/10/12 15:48:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "helloWorld".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('helloWorld')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('helloWorld')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('message/helloWo...')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/demo/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=message/helloWorld
+---
+2013/10/12 15:48:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "helloWorld.php".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('helloWorld.php')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('helloWorld.php')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('message/helloWo...')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/demo/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=message/helloWorld.php
+---
+2013/10/12 15:49:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "helloworld".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('helloworld')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('helloworld')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('message/hellowo...')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/demo/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=message/helloworld
+---
+2013/10/12 15:49:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "helloworld".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('helloworld')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/demo/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php?r=helloworld
+---
+2013/10/12 15:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "messahe".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('messahe')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/demo/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php?r=messahe
+---
